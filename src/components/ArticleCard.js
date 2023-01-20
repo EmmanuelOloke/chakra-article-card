@@ -3,9 +3,9 @@ import { Card, CardBody, Stack, Heading, Image, Text, Link } from '@chakra-ui/re
 import articleImage from '../images/chakra-image.png';
 
 const ArticleCard = () => {
-  const articleTitle = 'Creating a Card Component using Chakra-UI';
+  const articleTitle = 'Create a Card Component using Chakra-UI';
   const articleText =
-    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quis a consequatur veniam debitis, iusto, perferendis...';
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam cum aspernatur nostrum nulla deleniti voluptate quidem accusamus soluta recusandae dolor architecto, rerum fugit quaerat error dicta fugiat temporibus incidunt suscipit.';
   return (
     <Card maxW="sm">
       <CardBody>
@@ -22,7 +22,7 @@ const ArticleCard = () => {
           >
             <Link href="https://emmanueloloke.dev">{articleTitle}</Link>
           </Heading>
-          <Text fontSize="sm" lineHeight="taller" color="#949796">
+          <Text noOfLines={3} fontSize="sm" lineHeight="taller" color="#949796">
             {articleText}
           </Text>
         </Stack>
